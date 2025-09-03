@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shopping Mall Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Mall Admin</h2>
+      <nav>
+        <ul>
+          <li class="active">🏠 Dashboard</li>
+          <li>🛍️ Shops</li>
+          <li>💸 Sales</li>
+          <li>👥 Visitors</li>
+          <li>⚙️ Settings</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <input type="text" placeholder="Search..." />
+        <div class="profile">
+          <img src="https://i.pravatar.cc/40" alt="User" />
+        </div>
+      </header>
+
+      <section class="cards">
+        <div class="card">
+          <h3>👥 Visitors</h3>
+          <p>8,540</p>
+        </div>
+        <div class="card">
+          <h3>🛒 Sales</h3>
+          <p>$35,290</p>
+        </div>
+        <div class="card">
+          <h3>🏬 Shops</h3>
+          <p>132</p>
+        </div>
+        <div class="card">
+          <h3>💰 Revenue</h3>
+          <p>$92,580</p>
+        </div>
+      </section>
+
+      <section class="transactions">
+        <h2>Recent Transactions</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Shop</th>
+              <th>Category</th>
+              <th>Amount</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody id="transaction-body">
+            <!-- JavaScript will populate -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
